@@ -1,6 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
+html,
+body {
+  background: #fff;
+  font-family: "Raleway", sans-serif;
+}
 
+::selection {
+  background: #ff589e;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #ff589e;
+  color: #fff;
+}
 
 
