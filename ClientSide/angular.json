@@ -31,6 +31,9 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/animate.css/animate.min.css",
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
+              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "src/styles.scss"
 
             ],
@@ -104,5 +107,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "ee50c752-f9ff-461e-90ac-fe39e1c516cc"
   }
 }

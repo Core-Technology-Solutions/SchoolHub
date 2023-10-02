@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CarouselModule } from 'ngx-owl-carousel-o'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,7 @@ import { AboutComponent } from './Component/about/about.component';
 import { EventsComponent } from './Component/events/events.component';
 import { ContactUsComponent } from './Component/contact-us/contact-us.component';
 import { AdmissionComponent } from './Component/admission/admission.component';
+import { HeaderComponent } from './Component/header/header.component';
 
 
 @NgModule({
@@ -22,12 +25,16 @@ import { AdmissionComponent } from './Component/admission/admission.component';
     EventsComponent,
     ContactUsComponent,
     AdmissionComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
