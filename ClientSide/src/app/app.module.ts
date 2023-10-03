@@ -22,6 +22,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ServicesComponent } from './component/services/services.component';
+import { FunFactsComponent } from './component/fun-facts/fun-facts.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ContactUsComponent,
     AdmissionComponent,
     HeaderComponent,
+    ServicesComponent,
+    FunFactsComponent,
   ],
   imports: [
     BrowserModule,
