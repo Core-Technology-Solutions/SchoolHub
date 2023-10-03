@@ -1,9 +1,8 @@
-<div class="container" id="form-category">
+<div class="container py-5" id="form-category">
 <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
-  <mat-tab label="Student">
-
-    <form>
-      <h1>Student Login</h1>
+  <mat-tab label="Student" class="my-5">
+    <form class="text-center py-3" id="student-form">
+      <h1 class="my-3">Student Login</h1>
       <!-- NAME FIELD -->
       <div class="form-field">
         <label for="field" class="label--required">User Name</label>
@@ -29,17 +28,78 @@
         </section>
       </div>
       <!-- BUTTONS -->
-      <div class="form-buttons">
+      <div class="form-buttons py-4">
         <button class="a-btn">Log in</button>
       </div>
     </form>
+  </mat-tab>
 
-  </mat-tab>
   <mat-tab label="Staff">
-    Content 2
+        <form class="text-center py-3" id="staff-form">
+      <h1 class="my-3">Staff Login</h1>
+      <!-- NAME FIELD -->
+      <div class="form-field">
+        <label for="field" class="label--required">User Name</label>
+        <section>
+          <i class="fa-solid fa-user"></i>
+          <input id="field" required type="text" />
+        </section>
+      </div>
+      <!-- password FIELD -->
+      <div class="form-field">
+        <label for="password" class="label--required">Password</label>
+        <section>
+          <i class="fa-solid fa-key"></i>
+          <input id="password" required type="password" />
+        </section>
+      </div>
+      <!-- Code FIELD -->
+      <div class="form-field">
+        <label for="code" class="label--required">Code</label>
+        <section>
+          <i class="fa-regular fa-eye"></i>
+          <input id="code" required type="password" />
+        </section>
+      </div>
+      <!-- BUTTONS -->
+      <div class="form-buttons py-4">
+        <button class="a-btn">Log in</button>
+      </div>
+    </form>
   </mat-tab>
+
   <mat-tab label="Parent">
-    Content 3
+    <form class="text-center py-3" id="parent-form">
+      <h1 class="my-3">Parent Login</h1>
+      <!-- NAME FIELD -->
+      <div class="form-field">
+        <label for="field" class="label--required">User Name</label>
+        <section>
+          <i class="fa-solid fa-user"></i>
+          <input id="field" required type="text" />
+        </section>
+      </div>
+      <!-- password FIELD -->
+      <div class="form-field">
+        <label for="password" class="label--required">Password</label>
+        <section>
+          <i class="fa-solid fa-key"></i>
+          <input id="password" required type="password" />
+        </section>
+      </div>
+      <!-- Code FIELD -->
+      <div class="form-field">
+        <label for="code" class="label--required">Code</label>
+        <section>
+          <i class="fa-regular fa-eye"></i>
+          <input id="code" required type="password" />
+        </section>
+      </div>
+      <!-- BUTTONS -->
+      <div class="form-buttons py-4">
+        <button class="a-btn">Log in</button>
+      </div>
+    </form>
   </mat-tab>
 </mat-tab-group>
 </div>
