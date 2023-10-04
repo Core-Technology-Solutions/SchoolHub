@@ -23,7 +23,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ServicesComponent } from './component/services/services.component';
-import { FunFactsComponent } from './component/fun-facts/fun-facts.component';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +37,6 @@ import { FunFactsComponent } from './component/fun-facts/fun-facts.component';
     AdmissionComponent,
     HeaderComponent,
     ServicesComponent,
-    FunFactsComponent,
   ],
   imports: [
     BrowserModule,
