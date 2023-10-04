@@ -1,47 +1,68 @@
-<button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
-  {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
-</button>
 <section class="container" id="admission-form">
-<mat-stepper [linear]="isLinear" #stepper>
-  <mat-step [stepControl]="firstFormGroup">
-    <form [formGroup]="firstFormGroup" class="py-5">
-      <ng-template matStepLabel>Personal Information</ng-template>
-      <mat-form-field class="d-block">
-        <mat-label>First Name</mat-label>
-        <input matInput placeholder="First name" formControlName="firstCtrl" required>
-      </mat-form-field>
-      <mat-form-field class="d-block">
-        <mat-label>Last Name</mat-label>
-        <input matInput placeholder="Last name" formControlName="firstCtrl" required>
-      </mat-form-field>
-      <div>
-        <button mat-button matStepperNext>Next</button>
+  <div class="row py-5">
+    <div class="text-center">
+      <h2 class="section-title">Welcome to SchoolHub Admissions</h2>
+    </div>
+  </div>
+  <div class="row py-5 d-flex justify-content-evenly align-items-center">
+    <div class="col-lg-8 col-md-12">
+        <ul><h3>Admission Criteria</h3>
+          <li>We welcome students from all backgrounds and embrace diversity.</li>
+          <li>SchoolHub is open to students in [Grade Levels Accepted].</li>
+          <li>Our school is committed to a fair and non-discriminatory admission process, ensuring equal opportunities for all applicants.</li>
+        </ul>
+    </div>
+    <div class="col-lg-4 col-md-12">
+      <div class="card rounded">
+        <div class="car-img">
+          <img src="../../../assets/images/college-admission.svg" alt="" class="img-fluid">
+        </div>
       </div>
-    </form>
-  </mat-step>
-  <mat-step [stepControl]="secondFormGroup" label="Fill out your Contact Info">
-    <form [formGroup]="secondFormGroup" class="py-5">
-      <mat-form-field class="d-block">
-        <mat-label>Email</mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="username@gmail.com" required>
-      </mat-form-field>
-      <mat-form-field class="d-block">
-        <mat-label>Phone</mat-label>
-        <input matInput formControlName="secondCtrl" placeholder="+201003654789" required>
-      </mat-form-field>
+    </div>
+  </div>
+  <mat-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup" class="py-5">
+        <ng-template matStepLabel>Personal Information</ng-template>
+        <mat-form-field class="d-block container">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="First name" formControlName="firstCtrl" required>
+        </mat-form-field>
+        <mat-form-field class="d-block container">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Last name" formControlName="firstCtrl" required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperNext>Next
+            <span>Next</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="Fill out your Contact Info">
+      <form [formGroup]="secondFormGroup" class="py-5">
+        <mat-form-field class="d-block container">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="secondCtrl" placeholder="username@gmail.com" required>
+        </mat-form-field>
+        <mat-form-field class="d-block container">
+          <mat-label>Phone</mat-label>
+          <input matInput formControlName="secondCtrl" placeholder="+201003654789" required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <p class="text-center fs-3 py-5 msg-done">You are now done 🥰</p>
       <div>
         <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
+        <button mat-button (click)="stepper.reset()">Reset</button>
       </div>
-    </form>
-  </mat-step>
-  <mat-step>
-    <ng-template matStepLabel>Done</ng-template>
-    <p class="text-center py-5">You are now done.</p>
-    <div>
-      <button mat-button matStepperPrevious>Back</button>
-      <button mat-button (click)="stepper.reset()">Reset</button>
-    </div>
-  </mat-step>
-</mat-stepper>
+    </mat-step>
+  </mat-stepper>
 </section>
