@@ -1,12 +1,18 @@
 <div class="container py-5" id="form-category">
-<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
-  <mat-tab label="Student" class="my-5">
-    <form class="text-center py-3" id="student-form">
-      <h1 class="my-3">Student Login</h1>
+<mat-tab-group animationDuration="1000ms" class="py-5" headerPosition="below" mat-stretch-tabs="false" mat-align-tabs="center">
+  <mat-tab label="Student" class="my-5 custom-tab-bg">
+    <ng-template mat-tab-label>
+      <span class="custom-tab-label">Student</span>
+    </ng-template>
+    <form class="text-center py-1" id="student-form">
+      <div class="mt-3 student-img">
+        <img src="../../../assets/images/log-in/student-form.svg" alt="" class="img-fluid">
+      </div>
+      <h2 class="my-3">Student Login</h2>
       <!-- NAME FIELD -->
       <div class="form-field">
         <label for="field" class="label--required">User Name</label>
-        <section>
+        <section class="py-1 my-3">
           <i class="fa-solid fa-user"></i>
           <input id="field" required type="text" />
         </section>
@@ -14,7 +20,7 @@
       <!-- password FIELD -->
       <div class="form-field">
         <label for="password" class="label--required">Password</label>
-        <section>
+        <section class="py-1 my-3">
           <i class="fa-solid fa-key"></i>
           <input id="password" required type="password" />
         </section>
@@ -22,7 +28,7 @@
       <!-- Code FIELD -->
       <div class="form-field">
         <label for="code" class="label--required">Code</label>
-        <section>
+        <section class="py-1 my-3">
           <i class="fa-regular fa-eye"></i>
           <input id="code" required type="password" />
         </section>
@@ -35,12 +41,18 @@
   </mat-tab>
 
   <mat-tab label="Staff">
-        <form class="text-center py-3" id="staff-form">
+    <ng-template mat-tab-label>
+      <span class="custom-tab-label">Staff</span>
+    </ng-template>
+    <form class="text-center py-3" id="staff-form">
+      <div class="mt-3 student-img">
+        <img src="../../../assets/images/log-in/teacher-form.svg" alt="" class="img-fluid">
+      </div>
       <h1 class="my-3">Staff Login</h1>
       <!-- NAME FIELD -->
       <div class="form-field">
         <label for="field" class="label--required">User Name</label>
-        <section>
+        <section class="py-1 my-3">
           <i class="fa-solid fa-user"></i>
           <input id="field" required type="text" />
         </section>
@@ -48,7 +60,7 @@
       <!-- password FIELD -->
       <div class="form-field">
         <label for="password" class="label--required">Password</label>
-        <section>
+        <section class="py-1 my-3">
           <i class="fa-solid fa-key"></i>
           <input id="password" required type="password" />
         </section>
@@ -56,7 +68,7 @@
       <!-- Code FIELD -->
       <div class="form-field">
         <label for="code" class="label--required">Code</label>
-        <section>
+        <section class="py-1 my-3">
           <i class="fa-regular fa-eye"></i>
           <input id="code" required type="password" />
         </section>
@@ -68,13 +80,19 @@
     </form>
   </mat-tab>
 
-  <mat-tab label="Parent">
+  <mat-tab label="Parent" id="mat-tab">
+    <ng-template mat-tab-label>
+      <span class="custom-tab-label">Parent</span>
+    </ng-template>
     <form class="text-center py-3" id="parent-form">
+      <div class="mt-3 student-img">
+        <img src="../../../assets/images/log-in/parent-form.svg" alt="" class="img-fluid">
+      </div>
       <h1 class="my-3">Parent Login</h1>
       <!-- NAME FIELD -->
       <div class="form-field">
         <label for="field" class="label--required">User Name</label>
-        <section>
+        <section class="py-1 my-3">
           <i class="fa-solid fa-user"></i>
           <input id="field" required type="text" />
         </section>
@@ -82,7 +100,7 @@
       <!-- password FIELD -->
       <div class="form-field">
         <label for="password" class="label--required">Password</label>
-        <section>
+        <section class="py-1 my-3">
           <i class="fa-solid fa-key"></i>
           <input id="password" required type="password" />
         </section>
@@ -90,7 +108,7 @@
       <!-- Code FIELD -->
       <div class="form-field">
         <label for="code" class="label--required">Code</label>
-        <section>
+        <section class="py-1 my-3">
           <i class="fa-regular fa-eye"></i>
           <input id="code" required type="password" />
         </section>
