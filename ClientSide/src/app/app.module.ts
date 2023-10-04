@@ -23,6 +23,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ServicesComponent } from './component/services/services.component';
+import { GalleryComponent } from './Component/gallery/gallery.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { ServicesComponent } from './component/services/services.component';
     AdmissionComponent,
     HeaderComponent,
     ServicesComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,

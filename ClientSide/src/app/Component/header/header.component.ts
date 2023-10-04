@@ -9,8 +9,12 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class HeaderComponent {
   customOptions: OwlOptions = {
     center: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
     items: 1,
     loop: true,
+    navSpeed: 700,
     nav: true,
     dots: false,
     navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
