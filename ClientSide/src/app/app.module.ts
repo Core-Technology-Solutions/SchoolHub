@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CarouselModule } from 'ngx-owl-carousel-o'; 
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatTabsModule } from '@angular/material/tabs';
@@ -23,6 +23,8 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ServicesComponent } from './component/services/services.component';
+import { HomeComponent } from './Component/home/home.component';
+import { NotFoundComponent } from './Component/not-found/not-found.component';
 
 
 @NgModule({
@@ -37,6 +39,8 @@ import { ServicesComponent } from './component/services/services.component';
     AdmissionComponent,
     HeaderComponent,
     ServicesComponent,
+    HomeComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
