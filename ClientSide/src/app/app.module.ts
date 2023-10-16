@@ -22,7 +22,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-//import { ServicesComponent } from './component/services/services.component';
+import { ServicesComponent } from './Component/services/services.component';
 import { GalleryComponent } from './Component/gallery/gallery.component';
 import { HomeComponent } from './Component/home/home.component';
 import { NotFoundComponent } from './Component/not-found/not-found.component';
@@ -42,6 +42,7 @@ import { NotFoundComponent } from './Component/not-found/not-found.component';
     GalleryComponent,
     HomeComponent,
     NotFoundComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
